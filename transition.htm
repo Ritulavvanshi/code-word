@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition in css</title>
+    <link rel="shortcut icon" href="https://tse1.mm.bing.net/th/id/OIP.f-O6p9FDCNFdCkYYDUYJSQHaHa?pid=Api&rs=1&c=1&qlt=95&w=107&h=107" type="image/x-icon">
+    <style>
+        div{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            transition-property: width height transform;
+            transition-duration: 2s, 4s;
+        }
+        div:hover{
+            background-color: blueviolet;
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+            border-radius: 50%;
+        
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
