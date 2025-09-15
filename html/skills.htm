@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border box in css</title>
+    <style>
+        *{margin: 4;
+        padding: 4;
+    box-sizing: border-box;}
+        div{display: flex;
+            width: 1500px;
+            height: 100;
+            margin: 0;
+background-color: darkcyan;
+font-size: 20px;
+font-weight: 500;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li a{
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        ul li{
+            width: 120px;
+            background-color: darkcyan;
+            float: left;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            margin-right: 2px;
+            
+        }
+        ul li ul li{
+            border-top: 1px ;
+        }
+        ul li ul{
+            display: none;
+        }
+        ul li:hover ul{
+            display: block;
+        }
+        .content li a{padding: 5px;
+            margin: 5px;
+           color: darkred;
+            background-color: darkgray;
+            
+        }
+        .navbar:hover{
+         background-color: darkorange;
+         
+        }
+        ul li .menu{
+            direction: ltr;
+            background-color: aqua;
+            margin: 2px;}
+body{
+    background-image: url();
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <ul><li><a href="#">home</a></li>
+    <li><a href="#">about us</a></li>
+
+<li><a href="#">skills <span>&#916;</span></a>
+
+    <ul class="content"><li><a href="#">html</a></li>
+    <li><a href="#">css</a></li>
+<li><a href="#">java</a>
+<ul class="menu"><li><a href="#">A</a></li>
+<li><a href="#">B</a></li>
+  </ul></li></ul>
+</li>
+
+<li><a href="#">contact us</a></li></ul>
+</div>
+
+<h2>Image Gallery</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+  <a target="_blank" href="https://in.images.search.yahoo.com/yhs/view;_ylt=AwrPrhTc_cRoZcg_FxUO9olQ;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2E2NjE4MDc5NTU3MmNiNzY4OWU5OWJlZThmNDI5Y2Y2BGdwb3MDMgRpdANiaW5n?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fyhs%2Fsearch%3Fp%3Dimage%2Bforest%26ei%3DUTF-8%26type%3Dtype80160-3489873588%26fr%3Dyhs-sz-002%26hsimp%3Dyhs-002%26hspart%3Dsz%26param1%3D2832906428%26tab%3Dorganic%26ri%3D2&w=2560&h=1440&imgurl=wallpapercave.com%2Fwp%2Fwp1853040.jpg&rurl=http%3A%2F%2Fwallpapercave.com%2Fhd-forest-wallpaper&size=911KB&p=image+forest&oid=a66180795572cb7689e99bee8f429cf6&fr2=&fr=yhs-sz-002&tt=HD+Forest+Wallpapers+-+Wallpaper+Cave&b=0&ni=140&no=2&ts=&tab=organic&sigr=bSfYPEqdtjLt&sigb=K7ZthCT.bJGv&sigi=jWJzOKopRei5&sigt=YqRjM7rlao4x&.crumb=kCWSpxDBnaM&fr=yhs-sz-002&hsimp=yhs-002&hspart=sz&type=type80160-3489873588&param1=2832906428">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.P3635mGYe6P8LPdZGA__MQHaE6?pid=Api&P=0&h=180" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Cinque Terre</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.axEhxOr0Kb0Rsy7mDlQ3MQHaEK?pid=Api&P=0&h=180" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Green Forest</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.KDE_41uDm97PQS9ND1xFVAHaEO?pid=Api&P=0&h=180" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Northern Lights</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.vi3zlfRhdbFIR2xe8WIzTAHaEK?pid=Api&P=0&h=180" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Mountains</div>
+
+
+    
+</body>
+</html>
