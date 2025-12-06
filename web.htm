@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Magic Colourful Game</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
+        background-size: 300% 300%;
+        animation: bgMove 12s infinite alternate ease-in-out;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+
+    @keyframes bgMove {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+
+    .magic-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle, #ffffffaa, #ffffff00);
+        box-shadow: 0 0 30px #fff, 0 0 60px #0ff, 0 0 120px #f0f;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .title {
+        position: absolute;
+        top: 40px;
+        font-size: 2.3rem;
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #fff; }
+        to { text-shadow: 0 0 25px #0ff; }
+    }
+</style>
+</head>
+
+<body>
+
+<h1 class="title">Magic Colour Game ✨</h1>
+<div class="magic-circle" onclick="magic()"></div>
+
+<script>
+function magic() {
+    const circle = document.querySelector('.magic-circle');
+    const randomColor = `hsl(${Math.random() * 360}, 100%, 60%)`;
+
+    circle.style.boxShadow = `
+        0 0 30px ${randomColor},
+        0 0 60px ${randomColor},
+        0 0 120px ${randomColor},
+        0 0 200px ${randomColor}
+    `;
+
+    circle.style.transform = `scale(${1 + Math.random() * 0.3}) rotate(${Math.random() * 20 - 10}deg)`;
+}
+</script>
+
+</body>
+</html>
